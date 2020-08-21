@@ -42,6 +42,17 @@ In the picture above we can see there are links to the documentation for require
 ![Download Installer](/images/installer.png)
 1. Verify the installation. Expected output:
 ![Verification Image](/images/verification.png)
+1. After verifying installation, as **ROOT** run the installer at /bin/sh dynatrace-managed.sh, with the flag --license stringHere. stringHere is where you will replace with your license ky from the email.
+![Install Command](/images/install_command.png)
+1. Read and Accept the Terms of Service.
+![Terms](/images/terms.png)
+1. The following prompts will be to modify your installation, I am leaving these as the default so I will just press ENTER when prompted.
+1. Wait for the installer to finish.
+![Inatalling](/images/install.png)
+Expected Ouptut:
+![Installation Complete](/images/installed.png)
+The utput of the installer shows where Dynatrace will store information. These locations are related to the parameters prompted by the installer (which I left as default).  
+**Note:** The Dynatrace Managed cluster is greedy and wil use all space available, this necessitates having a dedicated machine to run the cluster.
 # <a name="ClusterActiveGate">Installing a Cluster ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="EnvironmentActiveGate">Installing an Environment ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>
