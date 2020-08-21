@@ -127,3 +127,15 @@ Install an older version of the ActiveGate by modifying the wget command to be 1
 ![Error Fix](/images/newcom.png)  
 1. Once complete; in the Managed Tenant select Show deployment status to verify the Environment ActiveGate is eployed and running. 
 # <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>  
+1. Retrun to the Deploy Dynatrace page.  
+1. Select Start Installation.  
+![Deploy Page](/images/deploypage.png) 
+1. Select OS, Linux in this case.
+![Deploy OS](/images/deployos.png)  
+1.Execute the commands shown, using ```--no-check-certificate```
+![Deploy 1](/images/dep1.png)  
+![Deploy 2](/images/dep2.png)  
+![Deploy 3](/images/dep3.png)  
+1. Click Show Deployment status to verify installation.
+![Check Dep](/images/checkdep.png)
+1. Restart Processes that you wish to monitor.  
