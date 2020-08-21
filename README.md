@@ -36,4 +36,5 @@ For the followig demonstration three **dedicated** machines will be used for hos
 # <a name="EnvironmentActiveGate">Installing an Environment ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="EasyTravel">**Optional** -Installing EasyTravel</a> <sub><sup>[Back to Top](#Top)</sup></sub>
-# <a name="Glossary">Glossary</a> <sub><sup>[Back to Top](#Top)</sup></sub
+# <a name="Glossary">Glossary</a> <sub><sup>[Back to Top](#Top)</sup></sub>
+From laptop
