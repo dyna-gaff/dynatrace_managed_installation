@@ -2,12 +2,17 @@
 This repository will contain a guide on how to deploy a Dynatrace Managed Cluster. After deploying the cluster we will install: a cluster ActiveGate, an environment ActiveGate, the OneAgent, and EasyTravel. The below list can be used for navigation.  
 1. [Getting Started](#GettingStarted)  
 1. [Installing a Managed Cluster](#ManagedCluster)
+  1. [Installation](#installation)
+  1. [Connecting to the Managed Cluster](#ConnectCluster)
+  1. [Overview of the Cluster Management Console](#CMC)
 1. [Installing a Cluster ActiveGate](#ClusterActiveGate)
 1. [Installing an Environment ActiveGate](#EnvironmentActiveGate)
 1. [Installing OneAgent](#OneAgent)
 1. [**Optional** - Installing EasyTravel](#EasyTravel)  
   [Glossary](#Glossary)
 # <a name="GettingStarted">Getting Started</a> <sub><sup>[Back to Top](#Top)</sup></sub>
+## Navigation:  
+The sections can be jumped to by clicking the section name above. There will be a glossary of terms at the end of the file. If more help is needed or you desire additional clarification, an effective too to use can be found [here](https://www.dynatrace.com/support/help/).
 ## Requirements:
 - ### Dynatrace Managed:
 The requirements for Dynatrace Managed will vary depending on the size of the cluster:
@@ -34,10 +39,11 @@ For the followig demonstration three **dedicated** machines will be used for hos
 ## Prerequisite:
 
 # <a name="ManagedCluster">Installing a Managed Cluster</a> <sub><sup>[Back to Top](#Top)</sup></sub>
+- ## <a name="Installation">Installation</a> [Back to Top](#Top)</sup></sub>
 An email will be sent to you with your installation link. Each of these links is unique and is tied to your Dynatrace account.
 Inside your linux terminal execute the commands in the email(pictured below for reference):
 ![Managed Email](/images/email_example.png)
-In the picture above we can see there are links to the documentation for requirements and the command to be executed.
+In the picture above we can see there are links to the documentation for requirements and the commands to be executed. Each of these commands is unique to your managed environment.
 1. Run the first command:  
 ![Download Installer](/images/installer.png)
 1. Verify the installation. Expected output:
@@ -51,8 +57,9 @@ In the picture above we can see there are links to the documentation for require
 ![Inatalling](/images/install.png)
 Expected Ouptut:
 ![Installation Complete](/images/installed.png)
-The utput of the installer shows where Dynatrace will store information. These locations are related to the parameters prompted by the installer (which I left as default).  
-**Note:** The Dynatrace Managed cluster is greedy and wil use all space available, this necessitates having a dedicated machine to run the cluster.
+The output of the installer shows where Dynatrace will store information. These locations are related to the parameters prompted by the installer (which I left as default).  
+**Note:** The Dynatrace Managed cluster is a greedy application and wil use all space available, this necessitates having a dedicated machine to run the cluster. See the link for hardware requirements above for a thorough breakdown.  
+Our Dynatrace Managed cluster is now running. The IP provided by the installer will be used for later sections. Typically your cluster IP would be reachable, however as I am using an EC2 instance I will be using the public IP of that instance to connect to my cluster.
 # <a name="ClusterActiveGate">Installing a Cluster ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="EnvironmentActiveGate">Installing an Environment ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>
