@@ -30,11 +30,15 @@ The requirements for Dynatrace Managed will vary depending on the size of the cl
 OneAgent self-monitoring for Dynatrace Managed requires 4.8 GB of disk space on Linux. 
 The ability to use root privileges for installation. 
 - ### This lab:
-For the followig demonstration three **dedicated** machines will be used for hosting components, with a fourth machine having the OneAgent installed. I will be using an Amazon EC2 instance with Linux installed, two virtual machines with Ubuntu(64-bit) Operating Systems installed. The fourth machine, running the OneAgent and EasyTravel, will be 
+For the followig demonstration three **dedicated** machines will be used for hosting components, with a fourth machine having the OneAgent installed. I will be using an Amazon EC2 instance with Linux installed, two virtual machines with Ubuntu(64-bit) Operating Systems installed. The fourth machine, running the OneAgent and EasyTravel, will be   
+## Prerequisite:
+
 # <a name="ManagedCluster">Installing a Managed Cluster</a> <sub><sup>[Back to Top](#Top)</sup></sub>
+An email will be sent to you with your installation link. Each of these links is unique and is tied to your Dynatrace account.
+Inside your linux terminal execute the commands in the email(pictured below for reference):
+1. ![Managed Email](/images/email_example.png)
 # <a name="ClusterActiveGate">Installing a Cluster ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="EnvironmentActiveGate">Installing an Environment ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="EasyTravel">**Optional** -Installing EasyTravel</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="Glossary">Glossary</a> <sub><sup>[Back to Top](#Top)</sup></sub>
-From laptop
