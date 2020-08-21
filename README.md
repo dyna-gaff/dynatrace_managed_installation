@@ -54,14 +54,18 @@ In the picture above we can see there are links to the documentation for require
 ![Terms](/images/terms.png)
 1. The following prompts will be to modify your installation, I am leaving these as the default so I will just press ENTER when prompted.
 1. Wait for the installer to finish.
-![Inatalling](/images/install.png)
+![Inatalling](/images/install.png)  
 Expected Ouptut:
 ![Installation Complete](/images/installed.png)
 The output of the installer shows where Dynatrace will store information. These locations are related to the parameters prompted by the installer (which I left as default).  
 **Note:** The Dynatrace Managed cluster is a greedy application and wil use all space available, this necessitates having a dedicated machine to run the cluster. See the link for hardware requirements above for a thorough breakdown.  
 Our Dynatrace Managed cluster is now running. The IP provided by the installer will be used for later sections. Typically your cluster IP would be reachable, however as I am using an EC2 instance I will be using the public IP of that instance to connect to my cluster.
 - ## <a name="ConnectCluster">Connecting to Managed Cluster</a> [Back to Top](#Top)</sup></sub>
-TODO
+Using the provided IP ![IP]{/images/address.png}, connect to your Managed Cluster. On, initial visit you will be prompted to enter some basic information. As seen below:
+![Initial Visit](/images/signin.png)  
+Fill out the application to get started!  
+The landing page should look something similar to:
+![Cluster Management Console](/images/cmc.png)
 - ## <a name="CMC">Overview of the Cluster Management Console</a> [Back to Top](#Top)</sup></sub>
 TODO
 </br>
