@@ -31,9 +31,9 @@ OneAgent self-monitoring for Dynatrace Managed requires 4.8 GB of disk space on 
 The ability to use root privileges for installation. 
 ### This lab:
 For the followig demonstration three **dedicated** machines will be used for hosting components, with a fourth machine having the OneAgent installed. I will be using an Amazon EC2 instance with Linux installed, two virtual machines with Ubuntu(64-bit) Operating Systems installed. The fourth machine, running the OneAgent and EasyTravel, will be 
-# <a name="ManagedCluster">Installing a Managed Cluster</a>
-# <a name="ClusterActiveGate">Installing a Cluster ActiveGate</a>
-# <a name="EnvironmentActiveGate">Installing an Environment ActiveGate</a>
-# <a name="OneAgent">Installing OneAgent</a>
-# <a name="EasyTravel">**Optional** -Installing EasyTravel</a>
+# <a name="ManagedCluster">Installing a Managed Cluster</a> <sub><sup>[Back to Top](#Top)</sup></sub>
+# <a name="ClusterActiveGate">Installing a Cluster ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
+# <a name="EnvironmentActiveGate">Installing an Environment ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
+# <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>
+# <a name="EasyTravel">**Optional** -Installing EasyTravel</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="Glossary">Glossary</a> <sub><sup>[Back to Top](#Top)</sup></sub>
