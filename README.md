@@ -10,6 +10,8 @@ This repository will contain a guide on how to deploy a Dynatrace Managed Cluste
     1. [Install Cluster ActiveGate](#InstallActiveGate)
     1. [Verify Installation](#VerifyActiveGate)
 1. [Installing an Environment ActiveGate](#EnvironmentActiveGate)
+    1. [Navigate to Web UI](#WebUI)
+    1. [Installing an Environment ActiveGate](#InstallEnvironmentActiveGate)
 1. [Installing OneAgent](#OneAgent)
 1. [**Optional** - Installing EasyTravel](#EasyTravel)  
 # <a name="GettingStarted">Getting Started</a> <sub><sup>[Back to Top](#Top)</sup></sub>
@@ -116,15 +118,13 @@ Scroll to the bottom of the hamburger menu and select "Deploy Dynatrace".
 ![Install ActiveGate](/images/envinstall.png)  
 1. Select your environment Operating System, Linux in this case.
 1. Execute the commands. Use ```--no-check-certificate``` flag on the first command.
-![Install Commands](/images/envcom.png)  
-![Command 1](/images/envcom1.png)  
-![Command 2](/images/envcom2.png)  
-![Complete](/images/envinstalldone.png)  
+![Install Commands](/images/envcom.png)   
+![Command 1](/images/envcom1.png)   
+![Command 2](/images/envcom2.png)   
+![Complete](/images/envinstalldone.png)   
 **NOTE:** If you are getting the error  
 ![Error](images/error.png)  
 Install an older version of the ActiveGate by modifying the wget command to be 1.174.x or below. As seen in the below picture.
 ![Error Fix](/images/newcom.png)  
-1. Once complete, in the Managed Tenant select Show deployment status to verify. 
+1. Once complete; in the Managed Tenant select Show deployment status to verify the Environment ActiveGate is eployed and running. 
 # <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>  
-# <a name="EasyTravel">**Optional** -Installing EasyTravel</a> <sub><sup>[Back to Top](#Top)</sup></sub>  
-# <a name="Glossary">Glossary</a> <sub><sup>[Back to Top](#Top)</sup></sub>  
