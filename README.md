@@ -66,10 +66,10 @@ Using the provided IP ![IP](/images/address.png), connect to your Managed Cluste
 Fill out the application to get started!  
 The landing page should look something similar to:
 ![Cluster Management Console](/images/cmc.png)
-- ## <a name="CMC">Overview of the Cluster Management Console</a> [Back to Top](#Top)</sup></sub>
-TODO
 </br>
 # <a name="ClusterActiveGate">Installing a Cluster ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
+For this section we will install a Cluster ActiveGate, the easest way to do this is: from the home screen select the ... in the top right-hand corner and select "Add new Cluster ActiveGate":  
+![New Cluster ActiveGate](/images/addnewcag.png)
 # <a name="EnvironmentActiveGate">Installing an Environment ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="EasyTravel">**Optional** -Installing EasyTravel</a> <sub><sup>[Back to Top](#Top)</sup></sub>
