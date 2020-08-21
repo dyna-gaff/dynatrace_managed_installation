@@ -83,15 +83,16 @@ The values that we are goin to change can be seen here:
 ![Home](/images/home.png)  
 1. For this section we will install a Cluster ActiveGate, the easest way to do this is: from the home screen select the ... in the top right-hand corner and select "Add new Cluster ActiveGate":  
 ![New Cluster ActiveGate](/images/addnewcag.png)   
-1. Choose Operating System (Linux in this case.)
+1. Choose Operating System (Linux in this case.)  
 ![Operating System](/images/1dlcag.png)  
-1. Copy the commands into your Linux terminal. Add '''--no-check-certificate''' to the wget command.
-![Commands](/images/2downloadcag.png)  
-1. Run the wget command. Be sure to append '''--no-check-certificate'''. Expected output:  
+1. Copy the commands into your Linux terminal. Add '''--no-check-certificate''' to the wget command.  
+![Commands](/images/2downloadcag.png)   
+1. Run the wget command. Be sure to append '''--no-check-certificate'''. Expected output:   
 ![Install Command](/images/3install.png)  
-1. Wait for installation to finish.
+1. Wait for installation to finish.  
 ![Installation Finished](/images/activegatecli.png)  
-
+**Note:** If you see unable to connect, double check the ActiveGate Ip in the Cluster Node.  
+1. asdasdasd
 # <a name="EnvironmentActiveGate">Installing an Environment ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="EasyTravel">**Optional** -Installing EasyTravel</a> <sub><sup>[Back to Top](#Top)</sup></sub>
