@@ -6,13 +6,15 @@ This repository will contain a guide on how to deploy a Dynatrace Managed Cluste
     1. [Connecting to the Managed Cluster](#ConnectCluster)
     1. [Overview of the Cluster Management Console](#CMC)
 1. [Installing a Cluster ActiveGate](#ClusterActiveGate)
+    1. [Configuring Cluster](#ConfigureCluster)
+    1. [Install Cluster ActiveGate](#InstallActiveGate)
+    1. [Verify Installation](#VerifyActiveGate)
 1. [Installing an Environment ActiveGate](#EnvironmentActiveGate)
 1. [Installing OneAgent](#OneAgent)
 1. [**Optional** - Installing EasyTravel](#EasyTravel)  
-  [Glossary](#Glossary)
 # <a name="GettingStarted">Getting Started</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 ## Navigation:  
-The sections can be jumped to by clicking the section name above. There will be a glossary of terms at the end of the file. If more help is needed or you desire additional clarification, an effective too to use can be found [here](https://www.dynatrace.com/support/help/).
+The sections can be jumped to by clicking the section name above. If more help is needed or you desire additional clarification, an effective tool to use can be found [here](https://www.dynatrace.com/support/help/).
 ## Requirements:
 - ### Dynatrace Managed:
 The requirements for Dynatrace Managed will vary depending on the size of the cluster:
@@ -67,7 +69,7 @@ Fill out the application to get started!
 The landing page should look something similar to:
 ![Cluster Management Console](/images/cmc.png)  
 # <a name="ClusterActiveGate">Installing a Cluster ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>  
-## Configure ActiveGate to communicate with  Cluster.    
+## <a name="ConfigureCluster">Configuring Cluster</a> [Back to Top](#Top)</sup></sub>    
 1. Select Cluster Node segment of your Home environment.  
 ![Cluster Node](/images/clusternode.png)  
 1. Select the Cluster Node we created in the above steps.  
@@ -75,24 +77,28 @@ The landing page should look something similar to:
 The values that we are goin to change can be seen here:  
 ![ip](/images/valuestochange.png)  
 1. Select "Configure"  
-1. Change Node End Points. These values are the Ip adresses that you managed cluster will be able to communicate to, the ports that are important are 443, and 9999. The network must allow for traffic through these ports.We change these values to be the IP of the Cluster.  
+1. Change Node End Points. These values are the IP adresses that you managed cluster will be able to communicate to, the ports that are important are 443, and 9999. The network must allow for traffic through these ports. We change these values to be the IP of the Cluster.  
 ![Node End Point](/images/endpoint.png)  
 1. Select Update Configuration.  
-## Install Cluster ActiveGate
+## <a name="InstallActiveGate">Install Cluster ActiveGate</a> [Back to Top](#Top)</sup></sub>
 1. Navigate to the "Home" screen. By selecting Home from the hamburger menu.  
 ![Home](/images/home.png)  
 1. For this section we will install a Cluster ActiveGate, the easest way to do this is: from the home screen select the ... in the top right-hand corner and select "Add new Cluster ActiveGate":  
 ![New Cluster ActiveGate](/images/addnewcag.png)   
 1. Choose Operating System (Linux in this case.)  
 ![Operating System](/images/1dlcag.png)  
-1. Copy the commands into your Linux terminal. Add '''--no-check-certificate''' to the wget command.  
+1. Copy the commands into your Linux terminal. Add ```--no-check-certificate``` to the wget command.  
 ![Commands](/images/2downloadcag.png)   
-1. Run the wget command. Be sure to append '''--no-check-certificate'''. Expected output:   
+1. Run the wget command. Be sure to append ```--no-check-certificate```. Expected output:   
 ![Install Command](/images/3install.png)  
 1. Wait for installation to finish.  
 ![Installation Finished](/images/activegatecli.png)  
 **Note:** If you see unable to connect, double check the ActiveGate Ip in the Cluster Node.  
-1. asdasdasd
+## <a name="VerifyActiveGate">Verify Installation</a> [Back to Top](#Top)</sup></sub>
+1. Navigate to the "Deployment Status" section via the hamburger menu.  
+![Deployment](/images/deployment.png)
+1. Choosing ActiveGate in the menu will show you all your running ActiveGates.  
+![ActiveGate List](images/activegate.png)  
 # <a name="EnvironmentActiveGate">Installing an Environment ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="EasyTravel">**Optional** -Installing EasyTravel</a> <sub><sup>[Back to Top](#Top)</sup></sub>
