@@ -12,13 +12,12 @@ This repository will contain a guide on how to deploy a Dynatrace Managed Cluste
 1. [Installing an Environment ActiveGate](#EnvironmentActiveGate)
     1. [Navigate to Web UI](#WebUI)
     1. [Installing an Environment ActiveGate](#InstallEnvironmentActiveGate)
-1. [Installing OneAgent](#OneAgent)
-1. [**Optional** - Installing EasyTravel](#EasyTravel)  
+1. [Installing OneAgent](#OneAgent) 
 # <a name="GettingStarted">Getting Started</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 ## Navigation:  
 The sections can be jumped to by clicking the section name above. If more help is needed or you desire additional clarification, an effective tool to use can be found [here](https://www.dynatrace.com/support/help/).
 ## Requirements:
-- ### Dynatrace Managed:
+### Dynatrace Managed:
 The requirements for Dynatrace Managed will vary depending on the size of the cluster:
 
 | Node Type | Max Hosts Monitored(per node) | Peak User Actions/min(per node) | Min Node Specifications | Disk IOPS(pernode) | Transaction Storage (10 days code visibility) | Long-term Metrics Store (per node) | Elasticsearch(per node)(35 days retention) |
@@ -30,15 +29,15 @@ The requirements for Dynatrace Managed will vary depending on the size of the cl
 |XLarge|2500|100000|64 vCPUs, 512GB RAM|1500|2TB|4TB|3TB|
 
 <sub><sup>For a more detailed breakdown, pleave visit the [Dynatrace Managed documentation](https://www.dynatrace.com/support/help/setup-and-configuration/dynatrace-managed/installation/dynatrace-managed-hardware-and-system-requirements/).</sup></sub>  
-- ### ActiveGates (**Each**)
+### ActiveGates (**Each**)
   - 2 GB free disk space
   - 2 GB RAM(4 GB Recommended)
   - 1 dual core processor
   - Windows or Linux Operating System
-- ### Dynatrace Managed One-Agent
+### Dynatrace Managed One-Agent
 OneAgent self-monitoring for Dynatrace Managed requires 4.8 GB of disk space on Linux. 
 The ability to use root privileges for installation. 
-- ### This lab:
+### This lab:
 For the followig demonstration three **dedicated** machines will be used for hosting components, with a fourth machine having the OneAgent installed. I will be using an Amazon EC2 instance with Linux installed, two virtual machines with Ubuntu(64-bit) Operating Systems installed. The fourth machine, running the OneAgent and EasyTravel, will be a Windows machine. 
 ## Prerequisite:
 
