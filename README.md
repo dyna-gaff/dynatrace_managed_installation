@@ -42,7 +42,7 @@ For the followig demonstration three **dedicated** machines will be used for hos
 - ## <a name="Installation">Installation</a> [Back to Top](#Top)</sup></sub>
 An email will be sent to you with your installation link. Each of these links is unique and is tied to your Dynatrace account.
 Inside your linux terminal execute the commands in the email(pictured below for reference):
-![Managed Email](/images/email_example.png)
+![Managed Email](/images/email_example.png)  
 In the picture above we can see there are links to the documentation for requirements and the commands to be executed. Each of these commands is unique to your managed environment.
 1. Run the first command:  
 ![Download Installer](/images/installer.png)
@@ -83,8 +83,14 @@ The values that we are goin to change can be seen here:
 ![Home](/images/home.png)  
 1. For this section we will install a Cluster ActiveGate, the easest way to do this is: from the home screen select the ... in the top right-hand corner and select "Add new Cluster ActiveGate":  
 ![New Cluster ActiveGate](/images/addnewcag.png)   
-1. 
---no-check-certificate
+1. Choose Operating System (Linux in this case.)
+![Operating System](/images/1dlcag.png)  
+1. Copy the commands into your Linux terminal. Add '''--no-check-certificate''' to the wget command.
+![Commands](/images/2downloadcag.png)  
+1. Run the wget command. Be sure to append '''--no-check-certificate'''. Expected output:  
+![Install Command](/images/3install.png)  
+1. Wait for installation to finish.
+![Installation Finished](/images/activegatecli.png)  
 
 # <a name="EnvironmentActiveGate">Installing an Environment ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>
