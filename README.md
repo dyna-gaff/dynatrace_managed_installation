@@ -37,7 +37,7 @@ The requirements for Dynatrace Managed will vary depending on the size of the cl
 OneAgent self-monitoring for Dynatrace Managed requires 4.8 GB of disk space on Linux. 
 The ability to use root privileges for installation. 
 - ### This lab:
-For the followig demonstration three **dedicated** machines will be used for hosting components, with a fourth machine having the OneAgent installed. I will be using an Amazon EC2 instance with Linux installed, two virtual machines with Ubuntu(64-bit) Operating Systems installed. The fourth machine, running the OneAgent and EasyTravel, will be   
+For the followig demonstration three **dedicated** machines will be used for hosting components, with a fourth machine having the OneAgent installed. I will be using an Amazon EC2 instance with Linux installed, two virtual machines with Ubuntu(64-bit) Operating Systems installed. The fourth machine, running the OneAgent and EasyTravel, will be a Windows machine. 
 ## Prerequisite:
 
 # <a name="ManagedCluster">Installing a Managed Cluster</a> <sub><sup>[Back to Top](#Top)</sup></sub>
@@ -99,8 +99,32 @@ The values that we are goin to change can be seen here:
 ![Deployment](/images/deployment.png)
 1. Choosing ActiveGate in the menu will show you all your running ActiveGates.  
 ![ActiveGate List](images/activegate.png)  
-# <a name="EnvironmentActiveGate">Installing an Environment ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
-##
-# <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>
-# <a name="EasyTravel">**Optional** -Installing EasyTravel</a> <sub><sup>[Back to Top](#Top)</sup></sub>
-# <a name="Glossary">Glossary</a> <sub><sup>[Back to Top](#Top)</sup></sub>
+# <a name="EnvironmentActiveGate">Installing an Environment ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>  
+## <a name="WebUI">Navigate To Web UI</a> <sub><sup>[Back to Top](#Top)</sup></sub>  
+1. Navigate to the Environments section, by selecting Environments in the hamburger menu.
+![EnvMenu](/images/environmentsmenu.png)  
+1. Select the Environment we created at login.  
+![Working Environment](/images/workingenvironment.png)  
+1. In the Environment section, click "Go to Environment".  
+![Environment Page](/images/environmentgoto.png)
+1. This bring you to the Managed Tenant, this is where information collected by Dynatrace can be seen.  
+## <a name="InstallEnvironmentActiveGate">Installing an Environment ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>  
+Scroll to the bottom of the hamburger menu and select "Deploy Dynatrace".  
+![Managed tenant](/images/managedtenant.png)  
+![Deploy Dynatrace](/images/tenantdeploy.png)  
+1. Towards the bottom of the page, select Install ActiveGate.  
+![Install ActiveGate](/images/envinstall.png)  
+1. Select your environment Operating System, Linux in this case.
+1. Execute the commands. Use ```--no-check-certificate``` flag on the first command.
+![Install Commands](/images/envcom.png)  
+![Command 1](/images/envcom1.png)  
+![Command 2](/images/envcom2.png)  
+![Complete](/images/envinstalldone.png)  
+**NOTE:** If you are getting the error  
+![Error](images/error.png)  
+Install an older version of the ActiveGate by modifying the wget command to be 1.174.x or below. As seen in the below picture.
+![Error Fix](/images/newcom.png)  
+1. Once complete, in the Managed Tenant select Show deployment status to verify. 
+# <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>  
+# <a name="EasyTravel">**Optional** -Installing EasyTravel</a> <sub><sup>[Back to Top](#Top)</sup></sub>  
+# <a name="Glossary">Glossary</a> <sub><sup>[Back to Top](#Top)</sup></sub>  
