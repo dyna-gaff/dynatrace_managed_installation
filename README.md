@@ -41,7 +41,7 @@ For the followig demonstration three **dedicated** machines will be used for hos
 ## Prerequisite:
 
 # <a name="ManagedCluster">Installing a Managed Cluster</a> <sub><sup>[Back to Top](#Top)</sup></sub>
-- ## <a name="Installation">Installation</a> <sup><sub[Back to Top](#Top)</sup></sub>
+- ## <a name="Installation">Installation</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 An email will be sent to you with your installation link. Each of these links is unique and is tied to your Dynatrace account.
 Inside your linux terminal execute the commands in the email(pictured below for reference):
 ![Managed Email](/images/email_example.png)  
@@ -62,14 +62,14 @@ Expected Ouptut:
 The output of the installer shows where Dynatrace will store information. These locations are related to the parameters prompted by the installer (which I left as default).  
 **Note:** The Dynatrace Managed cluster is a greedy application and wil use all space available, this necessitates having a dedicated machine to run the cluster. See the link for hardware requirements above for a thorough breakdown.  
 Our Dynatrace Managed cluster is now running. The IP provided by the installer will be used for later sections. Typically your cluster IP would be reachable, however as I am using an EC2 instance I will be using the public IP of that instance to connect to my cluster.  
-- ## <a name="ConnectCluster">Connecting to Managed Cluster</a> <sup><sub[Back to Top](#Top)</sup></sub>
+- ## <a name="ConnectCluster">Connecting to Managed Cluster</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 Using the provided IP ![IP](/images/address.png), connect to your Managed Cluster. On, initial visit you will be prompted to enter some basic information. As seen below:  
 ![Initial Visit](/images/signin.png)  
 Fill out the application to get started!  
 The landing page should look something similar to:
 ![Cluster Management Console](/images/cmc.png)  
 # <a name="ClusterActiveGate">Installing a Cluster ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>  
-## <a name="ConfigureCluster">Configuring Cluster</a> <sup><sub[Back to Top](#Top)</sup></sub>   
+## <a name="ConfigureCluster">Configuring Cluster</a> <sub><sup>[Back to Top](#Top)</sup></sub>   
 1. Select Cluster Node segment of your Home environment.  
 ![Cluster Node](/images/clusternode.png)  
 1. Select the Cluster Node we created in the above steps.  
@@ -80,7 +80,7 @@ The values that we are goin to change can be seen here:
 1. Change Node End Points. These values are the IP adresses that you managed cluster will be able to communicate to, the ports that are important are 443, and 9999. The network must allow for traffic through these ports. We change these values to be the IP of the Cluster.  
 ![Node End Point](/images/endpoint.png)  
 1. Select Update Configuration.  
-## <a name="InstallActiveGate">Install Cluster ActiveGate</a> <sup><sub[Back to Top](#Top)</sup></sub>
+## <a name="InstallActiveGate">Install Cluster ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 1. Navigate to the "Home" screen. By selecting Home from the hamburger menu.  
 ![Home](/images/home.png)  
 1. For this section we will install a Cluster ActiveGate, the easest way to do this is: from the home screen select the ... in the top right-hand corner and select "Add new Cluster ActiveGate":  
@@ -94,7 +94,7 @@ The values that we are goin to change can be seen here:
 1. Wait for installation to finish.  
 ![Installation Finished](/images/activegatecli.png)  
 **Note:** If you see unable to connect, double check the ActiveGate Ip in the Cluster Node.  
-## <a name="VerifyActiveGate">Verify Installation</a> <sup><sub[Back to Top](#Top)</sup></sub>
+## <a name="VerifyActiveGate">Verify Installation</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 1. Navigate to the "Deployment Status" section via the hamburger menu.  
 ![Deployment](/images/deployment.png)
 1. Choosing ActiveGate in the menu will show you all your running ActiveGates.  
