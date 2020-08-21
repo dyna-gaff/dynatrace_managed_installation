@@ -36,7 +36,12 @@ For the followig demonstration three **dedicated** machines will be used for hos
 # <a name="ManagedCluster">Installing a Managed Cluster</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 An email will be sent to you with your installation link. Each of these links is unique and is tied to your Dynatrace account.
 Inside your linux terminal execute the commands in the email(pictured below for reference):
-1. ![Managed Email](/images/email_example.png)
+![Managed Email](/images/email_example.png)
+In the picture above we can see there are links to the documentation for requirements and the command to be executed.
+1. Run the first command:  
+![Download Installer](/images/installer.png)
+1. Verify the installation. Expected output:
+![Verification Image](/images/verification.png)
 # <a name="ClusterActiveGate">Installing a Cluster ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="EnvironmentActiveGate">Installing an Environment ActiveGate</a> <sub><sup>[Back to Top](#Top)</sup></sub>
 # <a name="OneAgent">Installing OneAgent</a> <sub><sup>[Back to Top](#Top)</sup></sub>
